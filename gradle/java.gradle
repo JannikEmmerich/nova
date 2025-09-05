@@ -3,7 +3,9 @@ apply plugin: 'java-library'
 //apply plugin: 'io.freefair.maven-optional'
 apply plugin: 'io.spring.dependency-management'
 
-sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
+java {
+  sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
+}
 
 jar {
   from "${rootDir}/LICENSE"

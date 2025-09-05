@@ -1,8 +1,12 @@
 dependencies {
-   testImplementation "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
-  // testImplementation 'io.projectreactor:reactor-test'
+  testImplementation "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+  testImplementation 'io.projectreactor:reactor-test'
 }
 
-test {
-  useJUnitPlatform()
+testing {
+  suites {
+    test {
+      useJUnitJupiter() // or useJUnit(), useTestNG(), etc.
+    }
+  }
 }
