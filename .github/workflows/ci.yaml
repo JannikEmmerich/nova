@@ -124,7 +124,7 @@ jobs:
       - name: Checkout maven repo
         uses: actions/checkout@v5
         with:
-          repository: marcel-repos/mvn
+          repository: JannikEmmerich/mvn
           path: ./mvn-repo
 
       - uses: actions/setup-java@v5
