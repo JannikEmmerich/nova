@@ -7,7 +7,7 @@ on:
   pull_request:
 
 env:
-  JAVA_VERSION: 17
+  JAVA_VERSION: 21
   JAVA_DISTRO: temurin
 
 jobs:
@@ -142,7 +142,7 @@ jobs:
       - name: Publish
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          repository-name: marcel-repos/mvn
+          repository-name: JannikEmmerich/mvn
           branch: main # The branch the action should deploy to.
           folder: ./mvn-repo # The folder the action should deploy.
           clean: false
