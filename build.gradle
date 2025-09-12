@@ -9,7 +9,7 @@ plugins {
   id 'base'
   id 'io.freefair.lombok' version "${freefairVersion}" // apply, because javadoc
   id  'com.netflix.nebula.project' version '11.0.0' apply false
-  id 'com.palantir.git-version' version '3.0.0'
+  id 'com.palantir.git-version' version '4.0.0'
   id 'com.github.spotbugs' version '6.0.5' apply false
   id 'io.freefair.maven-optional' version "${freefairVersion}"
   id 'com.github.jk1.dependency-license-report' version '2.9'
